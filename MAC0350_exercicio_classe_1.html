@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JupiterWeb</title>
+
+<!-- favicon: -->
+<link rel="icon" type="image/png" href="https://www.esquerdadiario.com.br/IMG/arton13446.png"> 
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f4f6f9;
+}
+
+/* HEADER */
+
+header{
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+
+    background: linear-gradient(
+        to bottom,
+        #FCB421 0%,
+        #FCB421 25%,
+        #64C4D2 25%,
+        #64C4D2 50%,
+        #1094AB 50%,
+        #1094AB 100%
+    );
+    
+}
+
+header img{
+    height:30px;
+    display:block;
+    margin:0 auto;
+}
+
+/* FORM */
+
+.login-container{
+    width:300px;
+    margin:50px auto;
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.login-container h2{
+    text-align:center;
+    color:#1094AB;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+/* BOTÃO */
+
+input[type="submit"]{
+    background-color:#ffcc00;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+input[type="submit"]:hover{
+    background-color:#e6b800;
+}
+
+/* FOOTER */
+
+footer{
+    background-color:#1094AB;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:50px;
+}
+
+footer a{
+    color:#FCB421;
+    text-decoration:none;
+    margin:0 5px;
+    transition:0.3s;
+}
+
+footer a:hover{
+    color:#64C4D2;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="https://uspdigital.usp.br/comumwebdev/imagens/cabecalho/usp-logo.png">
+    <h1 style="color:#1094AB" >Universidade de São Paulo</h1>
+    <h2 style="color:#64C4D2">Brasil</h2>
+</header>
+
+<div class="login-container">
+    <h2>Login</h2>
+
+    <form>
+        <label>Usuário</label>
+        <input type="text" placeholder="Usuário" name="usuario">
+
+        <label>Senha</label>
+        <input type="password" placeholder="Senha" name="senha">
+
+        <input type="submit" value="Entrar">
+    </form>
+</div>
+
+<footer>
+    <p>Universidade de São Paulo</p>
+    <p>Sistema JúpiterWeb - Portal Acadêmico</p>
+    <a href="https://uspdigital.usp.br/jupiterweb/creditos.jsp">Créditos</a> |
+    <a href="https://uspdigital.usp.br/jupiterweb/jupColegiadoEmailLista">Fale conosco</a>
+    <p>© 1999 - 2026 - Superintendência de Tecnologia da Informação/USP</p>
+</footer>
+
+</body>
+</html>
