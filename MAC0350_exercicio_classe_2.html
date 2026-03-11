@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Exercícios JavaScript Básico</title>
+
+<link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1280px-Unofficial_JavaScript_logo_2.svg.png">
+</head>
+
+<body>
+
+<h2>1. O Primeiro Evento</h2>
+<p>Clique no botão para exibir um alerta.</p>
+<button onclick="dispararAlerta()">Exibir Alerta</button>
+
+
+<h2>2. Loops e Console</h2>
+<p>Clique no botão e veja o console do navegador (F12).</p>
+<button onclick="contarPares()">Imprimir Pares no Console</button>
+
+
+<h2>3. Manipulando a DOM (querySelector)</h2>
+<p id="textoDOM">Texto Original</p>
+<button onclick="mudarTexto()">Mudar Texto</button>
+
+
+<h2>4. Condicionais e Tipagem (===)</h2>
+<p id="estado">Desligado</p>
+<button onclick="alternarEstado()">Alternar (Toggle)</button>
+
+
+<h2>5. Contador Dinâmico com Template Literals</h2>
+<p id="contador">10</p>
+<button onclick="diminuirContador()">Diminuir</button>
+
+
+<script>
+
+// 1
+function dispararAlerta(){
+    alert("Bem-vindo!");
+}
+
+// 2
+function contarPares(){
+    for(let i = 1; i <= 10; i++){
+        if(i % 2 === 0){
+            console.log(i);
+        }
+    }
+}
+
+// 3
+function mudarTexto(){
+    let texto = document.querySelector("#textoDOM");
+    texto.innerHTML = "JavaScript Dominado!";
+}
+
+// 4
+function alternarEstado(){
+    let estado = document.querySelector("#estado");
+
+    if(estado.innerHTML === "Desligado"){
+        estado.innerHTML = "Ligado";
+    } else {
+        estado.innerHTML = "Desligado";
+    }
+}
+
+// 5
+let contador = 10;
+
+function diminuirContador(){
+    contador--;
+
+    document.querySelector("#contador").innerHTML = contador;
+
+    if(contador === 0){
+        alert(`Fim do tempo!`);
+    }
+}
+
+</script>
+
+</body>
+</html>
